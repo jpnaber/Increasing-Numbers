@@ -1,0 +1,399 @@
+|stepC
+A <= Seven_Seg_Decoder:inst16.A
+Input => register:inst.INPUT
+Input => register:inst1.INPUT
+Input => register:inst2.INPUT
+Input => register:inst3.INPUT
+Input => register:inst4.INPUT
+Input => register:inst5.INPUT
+Input => register:inst6.INPUT
+Input => register:inst7.INPUT
+Register_0 => inst26.IN0
+Register_0 => register:inst.ENABLE
+Clear => inst24.IN0
+Clear => inst34.IN0
+Clear => inst35.IN0
+Clear => inst36.IN0
+Clear => inst37.IN0
+Clear => inst38.IN0
+Clear => inst39.IN0
+Clear => inst40.IN0
+pin_name1 => debouncer:inst9.MANUAL
+Clock => debouncer:inst9.BOARD
+B <= Seven_Seg_Decoder:inst16.B
+C <= Seven_Seg_Decoder:inst16.C
+D <= Seven_Seg_Decoder:inst16.D
+E <= Seven_Seg_Decoder:inst16.E
+F <= Seven_Seg_Decoder:inst16.F
+G <= Seven_Seg_Decoder:inst16.G
+A35 <= Seven_Seg_Decoder:inst17.A
+Register_1 => inst27.IN0
+Register_1 => register:inst1.ENABLE
+B36 <= Seven_Seg_Decoder:inst17.B
+C37 <= Seven_Seg_Decoder:inst17.C
+D38 <= Seven_Seg_Decoder:inst17.D
+E39 <= Seven_Seg_Decoder:inst17.E
+F40 <= Seven_Seg_Decoder:inst17.F
+G41 <= Seven_Seg_Decoder:inst17.G
+A42 <= Seven_Seg_Decoder:inst18.A
+Register_2 => inst28.IN0
+Register_2 => register:inst2.ENABLE
+B43 <= Seven_Seg_Decoder:inst18.B
+C44 <= Seven_Seg_Decoder:inst18.C
+D45 <= Seven_Seg_Decoder:inst18.D
+E46 <= Seven_Seg_Decoder:inst18.E
+F47 <= Seven_Seg_Decoder:inst18.F
+G48 <= Seven_Seg_Decoder:inst18.G
+A49 <= Seven_Seg_Decoder:inst19.A
+Register_3 => inst29.IN0
+Register_3 => register:inst3.ENABLE
+B50 <= Seven_Seg_Decoder:inst19.B
+C51 <= Seven_Seg_Decoder:inst19.C
+D52 <= Seven_Seg_Decoder:inst19.D
+E53 <= Seven_Seg_Decoder:inst19.E
+F54 <= Seven_Seg_Decoder:inst19.F
+G55 <= Seven_Seg_Decoder:inst19.G
+A56 <= Seven_Seg_Decoder:inst20.A
+Register_4 => inst30.IN0
+Register_4 => register:inst4.ENABLE
+B57 <= Seven_Seg_Decoder:inst20.B
+C58 <= Seven_Seg_Decoder:inst20.C
+D59 <= Seven_Seg_Decoder:inst20.D
+E60 <= Seven_Seg_Decoder:inst20.E
+F61 <= Seven_Seg_Decoder:inst20.F
+G62 <= Seven_Seg_Decoder:inst20.G
+A63 <= Seven_Seg_Decoder:inst21.A
+Register_5 => inst31.IN0
+Register_5 => register:inst5.ENABLE
+B64 <= Seven_Seg_Decoder:inst21.B
+C65 <= Seven_Seg_Decoder:inst21.C
+D66 <= Seven_Seg_Decoder:inst21.D
+E67 <= Seven_Seg_Decoder:inst21.E
+F68 <= Seven_Seg_Decoder:inst21.F
+G69 <= Seven_Seg_Decoder:inst21.G
+A70 <= Seven_Seg_Decoder:inst22.A
+Register_6 => inst32.IN0
+Register_6 => register:inst6.ENABLE
+B71 <= Seven_Seg_Decoder:inst22.B
+C72 <= Seven_Seg_Decoder:inst22.C
+D73 <= Seven_Seg_Decoder:inst22.D
+E74 <= Seven_Seg_Decoder:inst22.E
+F75 <= Seven_Seg_Decoder:inst22.F
+G76 <= Seven_Seg_Decoder:inst22.G
+A77 <= Seven_Seg_Decoder:inst23.A
+Register_7 => inst33.IN1
+Register_7 => register:inst7.ENABLE
+B78 <= Seven_Seg_Decoder:inst23.B
+C79 <= Seven_Seg_Decoder:inst23.C
+D80 <= Seven_Seg_Decoder:inst23.D
+E81 <= Seven_Seg_Decoder:inst23.E
+F82 <= Seven_Seg_Decoder:inst23.F
+G83 <= Seven_Seg_Decoder:inst23.G
+
+
+|stepC|Seven_Seg_Decoder:inst16
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|debouncer:inst9
+SMOOTH <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+BOARD => clock_divider_1024:inst.CLK_IN
+MANUAL => inst2.DATAIN
+
+
+|stepC|debouncer:inst9|clock_divider_1024:inst1
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|stepC|debouncer:inst9|clock_divider_1024:inst
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|stepC|Seven_Seg_Decoder:inst17
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst1
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|Seven_Seg_Decoder:inst18
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst2
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|Seven_Seg_Decoder:inst19
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst3
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|Seven_Seg_Decoder:inst20
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst4
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|Seven_Seg_Decoder:inst21
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst5
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|Seven_Seg_Decoder:inst22
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst6
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|Seven_Seg_Decoder:inst23
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepC|register:inst7
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

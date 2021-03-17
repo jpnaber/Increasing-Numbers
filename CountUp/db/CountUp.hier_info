@@ -1,0 +1,48 @@
+|CountUp
+2nd <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+enable => inst1.ACLR
+enable => inst.ACLR
+enable => inst2.ACLR
+enable => inst6.ACLR
+enable => inst7.ACLR
+enable => inst8.ACLR
+enable => inst9.ACLR
+enable => inst10.ACLR
+clock => clock_divider_1024:inst4.CLK_IN
+1st <= inst.DB_MAX_OUTPUT_PORT_TYPE
+3rd <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+4th <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+5th <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+6th <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+7th <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+8th <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CountUp|clock_divider_1024:inst3
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|CountUp|clock_divider_1024:inst4
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+

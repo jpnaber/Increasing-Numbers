@@ -1,0 +1,59 @@
+|stepA
+00[1] <= register:inst.Q0[1]
+00[0] <= register:inst.Q0[0]
+Input => register:inst.INPUT
+Input => register:inst1.INPUT
+Clear => register:inst.Clear
+Clear => register:inst1.Clear
+Clock => register:inst.CLOCK
+Clock => register:inst1.CLOCK
+EN1 => register:inst.ENABLE
+01[1] <= register:inst.Q1[1]
+01[0] <= register:inst.Q1[0]
+10[1] <= register:inst1.Q0[1]
+10[0] <= register:inst1.Q0[0]
+EN2 => register:inst1.ENABLE
+11[1] <= register:inst1.Q1[1]
+11[0] <= register:inst1.Q1[0]
+
+
+|stepA|register:inst
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepA|register:inst1
+Q0[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Clear => inst3.ACLR
+INPUT => inst.DATAIN
+CLOCK => inst.CLK
+CLOCK => inst1.CLK
+CLOCK => inst2.CLK
+CLOCK => inst3.CLK
+ENABLE => inst.ENA
+ENABLE => inst1.ENA
+ENABLE => inst2.ENA
+ENABLE => inst3.ENA
+Q1[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q1[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

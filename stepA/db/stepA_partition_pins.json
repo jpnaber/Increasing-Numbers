@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "00[0]",
+					"strict" : false
+				},
+				{
+					"name" : "00[1]",
+					"strict" : false
+				},
+				{
+					"name" : "01[0]",
+					"strict" : false
+				},
+				{
+					"name" : "01[1]",
+					"strict" : false
+				},
+				{
+					"name" : "10[0]",
+					"strict" : false
+				},
+				{
+					"name" : "10[1]",
+					"strict" : false
+				},
+				{
+					"name" : "11[0]",
+					"strict" : false
+				},
+				{
+					"name" : "11[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Input",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "EN1",
+					"strict" : false
+				},
+				{
+					"name" : "EN2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

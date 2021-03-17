@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "2nd",
+					"strict" : false
+				},
+				{
+					"name" : "1st",
+					"strict" : false
+				},
+				{
+					"name" : "3rd",
+					"strict" : false
+				},
+				{
+					"name" : "4th",
+					"strict" : false
+				},
+				{
+					"name" : "5th",
+					"strict" : false
+				},
+				{
+					"name" : "6th",
+					"strict" : false
+				},
+				{
+					"name" : "7th",
+					"strict" : false
+				},
+				{
+					"name" : "8th",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

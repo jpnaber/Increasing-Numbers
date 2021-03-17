@@ -1,0 +1,17 @@
+module UpCounter(Clock, enable, num);
+
+output [2:0] last;
+reg [2:0]num;
+input clock;
+input enable;
+
+always @(clock)
+	begin
+	if(enable == 0)
+		num <= 3'd0;
+	else
+		num <= num + 3'd1;
+	
+	end
+assign last = num;
+endmodule

@@ -1,0 +1,281 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "F",
+					"strict" : false
+				},
+				{
+					"name" : "G",
+					"strict" : false
+				},
+				{
+					"name" : "A35",
+					"strict" : false
+				},
+				{
+					"name" : "B36",
+					"strict" : false
+				},
+				{
+					"name" : "C37",
+					"strict" : false
+				},
+				{
+					"name" : "D38",
+					"strict" : false
+				},
+				{
+					"name" : "E39",
+					"strict" : false
+				},
+				{
+					"name" : "F40",
+					"strict" : false
+				},
+				{
+					"name" : "G41",
+					"strict" : false
+				},
+				{
+					"name" : "A42",
+					"strict" : false
+				},
+				{
+					"name" : "B43",
+					"strict" : false
+				},
+				{
+					"name" : "C44",
+					"strict" : false
+				},
+				{
+					"name" : "D45",
+					"strict" : false
+				},
+				{
+					"name" : "E46",
+					"strict" : false
+				},
+				{
+					"name" : "F47",
+					"strict" : false
+				},
+				{
+					"name" : "G48",
+					"strict" : false
+				},
+				{
+					"name" : "A49",
+					"strict" : false
+				},
+				{
+					"name" : "B50",
+					"strict" : false
+				},
+				{
+					"name" : "C51",
+					"strict" : false
+				},
+				{
+					"name" : "D52",
+					"strict" : false
+				},
+				{
+					"name" : "E53",
+					"strict" : false
+				},
+				{
+					"name" : "F54",
+					"strict" : false
+				},
+				{
+					"name" : "G55",
+					"strict" : false
+				},
+				{
+					"name" : "A56",
+					"strict" : false
+				},
+				{
+					"name" : "B57",
+					"strict" : false
+				},
+				{
+					"name" : "C58",
+					"strict" : false
+				},
+				{
+					"name" : "D59",
+					"strict" : false
+				},
+				{
+					"name" : "E60",
+					"strict" : false
+				},
+				{
+					"name" : "F61",
+					"strict" : false
+				},
+				{
+					"name" : "G62",
+					"strict" : false
+				},
+				{
+					"name" : "A63",
+					"strict" : false
+				},
+				{
+					"name" : "B64",
+					"strict" : false
+				},
+				{
+					"name" : "C65",
+					"strict" : false
+				},
+				{
+					"name" : "D66",
+					"strict" : false
+				},
+				{
+					"name" : "E67",
+					"strict" : false
+				},
+				{
+					"name" : "F68",
+					"strict" : false
+				},
+				{
+					"name" : "G69",
+					"strict" : false
+				},
+				{
+					"name" : "A70",
+					"strict" : false
+				},
+				{
+					"name" : "B71",
+					"strict" : false
+				},
+				{
+					"name" : "C72",
+					"strict" : false
+				},
+				{
+					"name" : "D73",
+					"strict" : false
+				},
+				{
+					"name" : "E74",
+					"strict" : false
+				},
+				{
+					"name" : "F75",
+					"strict" : false
+				},
+				{
+					"name" : "G76",
+					"strict" : false
+				},
+				{
+					"name" : "A77",
+					"strict" : false
+				},
+				{
+					"name" : "B78",
+					"strict" : false
+				},
+				{
+					"name" : "C79",
+					"strict" : false
+				},
+				{
+					"name" : "D80",
+					"strict" : false
+				},
+				{
+					"name" : "E81",
+					"strict" : false
+				},
+				{
+					"name" : "F82",
+					"strict" : false
+				},
+				{
+					"name" : "G83",
+					"strict" : false
+				},
+				{
+					"name" : "Input",
+					"strict" : false
+				},
+				{
+					"name" : "Register_0",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "Register_1",
+					"strict" : false
+				},
+				{
+					"name" : "Register_2",
+					"strict" : false
+				},
+				{
+					"name" : "Register_3",
+					"strict" : false
+				},
+				{
+					"name" : "Register_4",
+					"strict" : false
+				},
+				{
+					"name" : "Register_5",
+					"strict" : false
+				},
+				{
+					"name" : "Register_6",
+					"strict" : false
+				},
+				{
+					"name" : "Register_7",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name1",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

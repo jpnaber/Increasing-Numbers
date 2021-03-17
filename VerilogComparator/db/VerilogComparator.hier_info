@@ -1,0 +1,12 @@
+|VerilogComparator
+N0_0[0] => LessThan0.IN4
+N0_0[1] => LessThan0.IN3
+N0_1[0] => LessThan0.IN2
+N0_1[1] => LessThan0.IN1
+N1_0[0] => LessThan0.IN8
+N1_0[1] => LessThan0.IN7
+N1_1[0] => LessThan0.IN6
+N1_1[1] => LessThan0.IN5
+more <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

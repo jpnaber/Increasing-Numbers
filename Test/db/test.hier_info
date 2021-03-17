@@ -1,0 +1,47 @@
+|test
+pin_name8 <= Last[0].DB_MAX_OUTPUT_PORT_TYPE
+clock => clock_divider_1024:inst2.CLK_IN
+enable => counter:inst.enable
+pin_name7 <= Last[2].DB_MAX_OUTPUT_PORT_TYPE
+pin_name6 <= Last[5].DB_MAX_OUTPUT_PORT_TYPE
+pin_name5 <= Last[6].DB_MAX_OUTPUT_PORT_TYPE
+pin_name4 <= Last[7].DB_MAX_OUTPUT_PORT_TYPE
+pin_name3 <= Last[4].DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 <= Last[3].DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 <= Last[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|counter:inst
+clock => ~NO_FANOUT~
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+enable => num.OUTPUTSELECT
+last[0] <= last[0].DB_MAX_OUTPUT_PORT_TYPE
+last[1] <= num.DB_MAX_OUTPUT_PORT_TYPE
+last[2] <= num.DB_MAX_OUTPUT_PORT_TYPE
+last[3] <= num.DB_MAX_OUTPUT_PORT_TYPE
+last[4] <= num.DB_MAX_OUTPUT_PORT_TYPE
+last[5] <= num.DB_MAX_OUTPUT_PORT_TYPE
+last[6] <= num.DB_MAX_OUTPUT_PORT_TYPE
+last[7] <= num.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|clock_divider_1024:inst2
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+

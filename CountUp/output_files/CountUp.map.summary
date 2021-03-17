@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Dec 13 09:22:32 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : CountUp
+Top-level Entity Name : CountUp
+Family : Cyclone IV E
+Total logic elements : 33
+    Total combinational functions : 25
+    Dedicated logic registers : 28
+Total registers : 28
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

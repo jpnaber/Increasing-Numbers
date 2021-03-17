@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Q0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Q0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Q1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Q1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INPUT",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "ENABLE",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

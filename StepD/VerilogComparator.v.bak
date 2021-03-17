@@ -1,0 +1,17 @@
+module VerilogComparator(N0_0,N0_1,N1_0,N1_1,more);
+input [1:0]N0_0;
+input [1:0]N0_1;
+input [1:0]N1_0;
+input [1:0]N1_1;
+output wire more;
+
+wire [3:0]c;
+wire [3:0]d;
+assign c = {N0_1, N0_0};
+assign d = {N1_1, N1_0};
+
+
+
+assign more = (c <= d);
+
+endmodule
